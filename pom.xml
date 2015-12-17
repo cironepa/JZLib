@@ -50,35 +50,33 @@
 
 
   <dependencies>
-    <dependency> <groupId>org.jzkit</groupId> <artifactId>a2j</artifactId> <version>2.0.4</version> </dependency>
-    <dependency> <groupId>ant</groupId> <artifactId>ant</artifactId> <version>1.6.5</version> </dependency>
-    <dependency> <groupId>commons-beanutils</groupId> <artifactId>commons-beanutils</artifactId> <version>1.7.0</version> </dependency>
-    <dependency> <groupId>cql-java</groupId> <artifactId>cql-java</artifactId> <version>0.0.7</version> </dependency>
+    <dependency>
+      <groupId>org.jzkit</groupId>
+      <artifactId>a2j</artifactId>
+      <version>2.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>ant</groupId>
+      <artifactId>ant</artifactId>
+      <version>1.6.5</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>cql-java</groupId>
+      <artifactId>cql-java</artifactId>
+      <version>0.0.7</version>
+    </dependency>
   </dependencies>
-
-  <distributionManagement>
-    <repository>
-      <id>k-int-releases</id>
-      <name>Knowledge Intergation Maven2 Repository</name>
-      <url>dav:http://projects.k-int.com:8081/nexus-webapp-1.4.0/content/repositories/releases</url>
-    </repository>
-    <snapshotRepository>
-      <id>k-int-snapshots</id>
-      <name>Knowledge Intergation Maven2 Snapshot Repository</name>
-      <url>dav:http://projects.k-int.com:8081/nexus-webapp-1.4.0/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
 
   <repositories>
     <repository>
-      <id>K-Int Releases</id>
-      <url>http://projects.k-int.com/nexus-webapp-1.4.0/content/repositories/public</url>
-    </repository>
-    <repository>
-      <id>K-Int repo</id>
-      <url>http://developer.k-int.com/maven2/</url>
+      <id>k-int-releases</id>
+      <name>k-int-releases</name>
+      <url>http://nexus.k-int.com/content/repositories/releases</url>
     </repository>
   </repositories>
-
-
 </project>
