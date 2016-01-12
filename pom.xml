@@ -9,6 +9,7 @@
     </parent>
 
 
+
     <groupId>org.jzkit</groupId>
     <artifactId>jzlib</artifactId>
     <name>Z39.50 Endpoint Library</name>
