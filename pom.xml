@@ -24,6 +24,16 @@
     </scm>
 
     <build>
+        <!--prova-->
+        <resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include> <!--serve per copiare i file di properties-->
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
