@@ -13,7 +13,7 @@
     <groupId>org.jzkit</groupId>
     <artifactId>jzlib</artifactId>
     <name>Z39.50 Endpoint Library</name>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <url>http://www.k-int.com</url>
 
 
