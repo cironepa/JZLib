@@ -15,13 +15,13 @@ public class PrefixQueryParser {
   // private OIDRegister reg = OIDRegister.getRegister();
   private String default_attrset = "bib-1";
 
-  private static Properties default_conversion_rules = null;
+  private Properties default_conversion_rules = null;
 
-  public static Properties getDefaultConversionRules() {
+  public Properties getDefaultConversionRules() {
     if ( default_conversion_rules == null ) {
       default_conversion_rules = new Properties();
-      // URL config = PrefixQueryParser.class.getResource("org/jzkit/search/util/QueryModel/PrefixString/ConversionRules.properties") ;
-      URL config = PrefixQueryParser.class.getResource("ConversionRules.properties") ;
+//       URL config = PrefixQueryParser.class.getResource("org/jzkit/search/util/QueryModel/PrefixString/ConversionRules.properties") ;
+      URL config = PrefixQueryParser.class.getResource("/ConversionRules.properties") ;
 
       if ( config == null )
         throw new RuntimeException("Unable to locate default conversion rules");
@@ -42,7 +42,6 @@ public class PrefixQueryParser {
     p = new PrefixQueryLexer(r);
   }
 
-  // public InternalModelNamespaceNode parse() throws PrefixQueryException
   public InternalModelRootNode parse() throws PrefixQueryException {
     InternalModelRootNode result = new InternalModelRootNode();
     token = p.nextToken();
